@@ -1,0 +1,36 @@
+.square {
+  background-color: lightseagreen;
+  width: 250px;
+  height: 240px;
+  margin: 50px;
+  text-align: center;
+}
+
+.square__circle {
+  background-color: #ee634a;
+  display: inline-block;
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  margin-top: 65px;
+}
+
+.square--reversed {
+  background-color: lightseagreen;
+  width: 250px;
+  height: 240px;
+  margin: 50px;
+  text-align: center;
+  background-color: #ee634a;
+}
+
+.square__circle--reversed {
+  background-color: #ee634a;
+  display: inline-block;
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  margin-top: 65px;
+  background-color: lightseagreen;
+}
+/*# sourceMappingURL=styles.css.map */

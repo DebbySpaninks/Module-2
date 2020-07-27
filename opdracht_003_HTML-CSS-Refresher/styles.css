@@ -1,0 +1,85 @@
+body {
+  font-family: "Trebuchet MS", arial, verdana, sans-serif;
+  font-size: 16px;
+}
+
+[class^="grid-container"] {
+  width: 382px;
+  font-size: 18px;
+  border: 3px solid rgb(206, 204, 204);
+  border-radius: 8px;
+  display: grid;
+  grid-template-columns: 260px 130px;
+  grid-template-rows: 60px 110px 80px;
+  grid-template-areas:
+    "header aside"
+    "main main"
+    "footer footer";
+  margin: 45px 40px;
+}
+
+.header {
+  grid-area: header;
+  padding: 0px 18px;
+}
+
+[class^="h1"] {
+  font-size: 25px;
+  margin-bottom: -12px;
+}
+
+[class^="status"] {
+  margin-top: 15px;
+  color: rgb(77, 77, 77);
+}
+
+[class^="img"] {
+  border: 1px solid rgb(228, 222, 222);
+  width: 45%;
+  float: right;
+  grid-area: aside;
+  margin: 15px 25px 15px 0px;
+}
+
+.main {
+  grid-area: main;
+  padding: 13px;
+  margin-left: 5px;
+}
+
+.hr-main {
+  width: 382px;
+  margin: 30px -18px;
+  
+}
+
+[class^="footer-container"] {
+  grid-area: footer;
+  padding: 13px;
+  display: flex;
+  margin: 0px 7px;
+  width: 343px;
+}
+
+button[class^="footer"] {
+  background-color: white;
+  font-size: 16px;
+  font-weight: 700;
+  flex-grow: 1;
+  padding: 13px;
+}
+
+.footer-approve {
+  border: 2px solid rgb(21, 221, 31);
+  color: rgb(21, 221, 31);
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-right: none;
+}
+
+.footer-decline {
+  border: 2px solid rgb(245, 5, 5);
+  color: rgb(245, 5, 5);
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}

@@ -1,0 +1,13 @@
+.hero {
+  padding: $primary-padding;
+  height: 100vh;
+  background: $backgroundColor;
+  &__img img {
+    display: flex;
+    height: auto;
+    width: 15.5em;
+  }
+  &__text {
+    @include standard-text();
+  }
+}

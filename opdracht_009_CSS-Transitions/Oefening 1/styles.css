@@ -1,0 +1,34 @@
+.anim:active .ball-one {
+  left: 110px;
+  transition-property: left;
+  transition-duration: 100ms;
+  transition-timing-function: ease-out;
+}
+
+.anim:active .ball-two {
+  left: 410px;
+  transition-property: left;
+  transition-duration: 500ms;
+  transition-timing-function: ease;
+  transition-delay: 400ms;
+}
+
+.ball-one {
+  background: #ff97c0;
+  border-radius: 50%;
+  position: absolute;
+  top: 0px;
+  left: 00px;
+  width: 200px;
+  height: 200px;
+}
+
+.ball-two {
+  background: #0097c0;
+  border-radius: 50%;
+  position: absolute;
+  top: 100px;
+  left: 300px;
+  width: 100px;
+  height: 100px;
+}

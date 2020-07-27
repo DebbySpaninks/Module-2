@@ -1,0 +1,18 @@
+.featured {
+  padding: $primary-padding;
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__image img {
+    width: 300px;
+  }
+  &__text {
+    @include standard-text();
+    & p {
+      text-align: justify;
+      padding: $primary-padding;
+      line-height: 1.4em;
+    }
+  }
+}

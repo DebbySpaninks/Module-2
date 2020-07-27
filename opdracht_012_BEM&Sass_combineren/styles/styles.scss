@@ -1,0 +1,33 @@
+@mixin square {
+  background-color: lightseagreen;
+  width: 250px;
+  height: 240px;
+  margin: 50px;
+  text-align: center;
+}
+
+@mixin circle {
+  background-color: rgb(238, 99, 74);
+  display: inline-block;
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  margin-top: 65px;
+}
+.square {
+  @include square();
+}
+
+.square__circle {
+  @include circle();
+}
+
+.square--reversed {
+  @include square();
+  background-color: rgb(238, 99, 74);
+}
+
+.square__circle--reversed {
+  @include circle();
+  background-color: lightseagreen;
+}
